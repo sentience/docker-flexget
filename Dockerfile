@@ -26,7 +26,8 @@ RUN \
 	pip install --upgrade \
 		transmissionrpc \
 		deluge-client \
-		irc_bot && \
+		irc_bot \
+		youtube_dl && \
 	echo "**** install flexget ****" && \
 	apk add --no-cache --virtual=build-deps gcc libxml2-dev libxslt-dev libc-dev python3-dev jpeg-dev && \
 	pip install --upgrade --force-reinstall \
